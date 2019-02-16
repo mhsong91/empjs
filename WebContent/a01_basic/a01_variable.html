@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script >
+ //스크립트 데이터 타입
+ //데이터 탑입 확인  :typeof()
+//1number :숫자
+var num =25;
+var weight =75.8;
+//document.write("화면에 표시")
+document.write("나이"+num);
+//console.log(); 콘솔로그창에서 보기
+console.log("실수형데이터"+weight); 
+//boolean : true and false
+var point =70;
+var isPass=point>=60;
+document.write("<h1>합격여부"+point+	"합격여부"+isPass+"</h1>")
+//String  :문자현
+var name ="송명훈";
+document.write(name);
+//function : 함수 익명함수(병수형) , 선언적 함수 
+var call= function(){
+	alert("함수 호추");
+};
+//함수 호출
+//call();
+// object : 객체 ... json 객체 선언 , 함수형 객체 (생서자 객체)
+var json={}//객체의 초기화 객체는 속성(일바변수), 속성값(메서드(객체안에 함수 가들어가는것))
+// 객체명, 속성 =속성값; 객체명,메서드 =function(){함수 할당};
+json.name =" 솜여훈";
+json.age =25;
+json.adress="과천시";
+json.show =function(){
+	document.write("이름은" +this.name);
+			//객체가 가지고 이있는 this라는것은 객체가 포함된 속성, 메서드이 호출시 사용
+	document.write("나이" +this.age);
+	document.write("주소" +this.adress);
+				
+}
+//객체가 선언된 메서드 호출시 나온다
+json.show();//객체의 정의된 메서드명 호출시 ==>객체명+메서드명
+//확인예제 변수 선언 
+//애완 동물의 수를 병수로 선언
+//강아지 5 마리 , 고양이 3마리 ,앵무새 2마리 
+//다음과 같이 h2화면에 출력
+//우리집 애완용 동물은 
+var 강아지 =5;
+var 고양이 = 3;
+var 앵무새 =2;
+document.write("<h2> 강아지는 "+강아지+"고양이"+고양이+"앵무새"+앵무새+"<h2>");
+
+var num = 80;
+var pass =num>=60;
+
+document.write("<h3>내 학점은"+num+"통과여부는 "+pass+"<h3>");
+// array : 배열
+
+
+
+
+
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
