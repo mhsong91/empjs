@@ -55,9 +55,41 @@ var num = 80;
 var pass =num>=60;
 
 document.write("<h3>내 학점은"+num+"통과여부는 "+pass+"<h3>");
-// array : 배열
+
+/*
+ 학생의 이름과 국어 점수 ,영어 점수 , 수학 점수 를 속성으로 하는 객체를 생성하여 출려하시오
+ 
+ */
+var student ={};
+student.name ="명훈";
+student.kor=70;
+student.eng=80;
+student.math=60;
+student.showPoint =function(){
+	document.write("이름:" + student.name +"국어점수:"+student.kor+"수학점수:"+student.math+"입니다")
+	
+};
 
 
+student.showPoint();
+
+//array : 배열
+
+
+
+var arr1=[];
+arr1[0]="사과";
+arr1[1]="배";
+arr1[2]="감";
+
+var arr2=[]
+arr2[0]=1;
+arr2[1]=2;
+arr2[2]=3;
+
+
+document.write(arr1);
+document.write(arr2);
 
 
 
