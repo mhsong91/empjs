@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+    <script>
+        // 변수를 선언합니다.
+        var value = 0;
+        // do while 반복문
+        //  조건 상관없이 반복 프로세스를 한번 처리하고 ,
+        //하단의 WHILE 조건을 확인하여 처리 할떄
+        do {
+            alert(value + '번째 반복문');
+            value++;
+        } while (value < 5)
+       /*
+       메뉴 주문 받기 .....
+       주문 받습니다. 
+       계속 하시겠습니까?
+    		   
+       
+       
+       */ 	
+       do{
+    	   var menu=prompt("주문하세요","짜장면");
+    	   document.write("<h2>주문하신 메뉴"+menu+"</h2>");
+    	   var isfine= confirm("계속 주문 하시겠습니까?");
+       }while(isfine){
+    	   document.write("<h2>END</h2>");  
+       }
+        
+        	
+        	
+    </script> 
+</head>
+<body>
+
+</body>
+</html>

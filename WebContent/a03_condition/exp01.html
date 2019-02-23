@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script >
+/*
+ 중첩 조건 처리예제
+ 1. 입력데이터
+ 	1)나이 입력 prompt  
+ 	2)여자 입니까 ?  confirm();
+ 2.4가지 조건에 해당하는 내용 처리 
+ 	1) 남자 이면 성인 : man!
+ 	2) 남자 이면서 미성년자  : Boy!
+ 	3) 여자인면서  성인  :Lady
+ 	4)여자이면서 미성년 :Grail 
+ */
+ var age = prompt("나이 입력 ","0");
+ var pass =confirm("여자 입니까?");
+if(pass){
+	if(age>20){
+		alert("여자");
+	}else{
+		alert("여자 애");
+	}
+}else{
+	if(age>20){
+		
+		alert("남자");
+	}else{
+		alert("남자 애");
+	
+}
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
