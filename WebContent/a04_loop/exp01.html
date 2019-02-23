@@ -14,15 +14,16 @@
 	var names=["홍길동","김길동","신길동"];
 	var cnt=0;
 	document.write("<h2>"+(++cnt)+") 현재 배열의 데이터:"+names+"</h2>");
-	names[3]="마길동";
-	names[4]="오길동";
+	// names.length 배열의 크기는 index보다 1적기에  추가 배열을
+	//  선언할 때, 활용할 수 있다.
+	names[names.length]="마길동";
+	names[names.length]="오길동";
 	document.write("<h2>"+(++cnt)+") 현재 배열의 데이터:"+names+"</h2>");
 	names.push("정길동");
 	document.write("<h2>"+(++cnt)+") 현재 배열의 데이터:"+names+"</h2>");
 	document.write("<h2>삭제할 데이터1:"+names.pop()+"</h2>");
 	document.write("<h2>삭제할 데이터2:"+names.pop()+"</h2>");
 	document.write("<h2>"+(++cnt)+") 현재 배열의 데이터:"+names+"</h2>");
-	alert(names[1]);
 
 </script>
 </head>

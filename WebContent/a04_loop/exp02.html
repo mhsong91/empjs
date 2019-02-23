@@ -81,21 +81,22 @@
  	document.write("<table border>")
  	document.write("<tr><th>no</th><th>날짜</th><th>구분</th>"+
  			"<th>내역</th><th>금액</th><th>잔액</th></tr>")
- 			
+ 	// 전체잔액		
  	var tot=0;		
 	for(var idx=0;idx<accbook.length;idx++){
-		//개별 객체 
-		
+		// 개별 단위 객체
 		var sadr = accbook[idx];
+		// no 처리..
 		document.write("<tr><td>"+(idx+1)+"</td>");
-		// for in 객체 ... 
-		
+		// for in 객체..
 		for(var prop in sadr){
 			document.write("<td>"+sadr[prop]+"</td>");
 		}
+		// type을 체크해서 지출이면 -처리,
 		if(sadr.type=="지출" ){
 			tot-=sadr.money;
 		}else{
+			// 수입일 때 + 처리.
 			tot+=sadr.money;
 		}		
 		document.write("<td>"+tot+"</td></tr>");

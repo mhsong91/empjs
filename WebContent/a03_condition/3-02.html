@@ -3,10 +3,12 @@
 <head><meta charset="UTF-8">
     <script>
         // 변수를 선언합니다.
-        // Date 내장된 객체
-        // getHours() 내장된 메서드로 현재 시간을 나타냄
+        // Date() : 내장된 객체
+        
         var date = new Date();
-        document.write("<h1>"+date+"</h1>")
+        // getHours()라는 메서드
+        // 현재 시간을 default 가지고 있다.
+        document.write("<h2>"+date+"</h2>");
         var hour = date.getHours();
         // if 조건문
         if (hour < 12) {
