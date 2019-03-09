@@ -35,8 +35,11 @@
         students.push(new Student('서준서', 45, 52, 72, 78));
         // 정렬하고 1등부터 3등까지만 배열에 남겨둡니다.
         students.sort(function (left, right) {
+        	// 객체.특정속성/메서드  기준으로 정렬처리시..
+        	// 내림차순으로 정렬처리.
             return right.getSum() - left.getSum();
         });
+        // .slice(index, 순차) : 1~3까지 배열에 데이터 추출
         students = students.slice(0, 3);
         // 출력합니다.
         var output = '이름\t총점\t평균\n';

@@ -7,6 +7,7 @@
         // 출력합니다.
         var output = '';
         array.reduce(function (previousValue, currentValue, index, array) {
+        	alert( previousValue + ":"+ currentValue);
             output += previousValue + ' : ' + currentValue + ' : ' + index + '\n';
         });
         alert(output);

@@ -34,6 +34,8 @@
         students.push(new Student('박아현', 97, 92, 88, 95));
         students.push(new Student('서준서', 45, 52, 72, 78));
         // 정렬하고 1등부터 3등까지만 배열에 남겨둡니다.
+        // 객체.메서드1().메서드2() : 메서드 체이닝 처리로
+        //    해당 메서드를 적용한 결과 객체 호출
         students = students.sort(function (left, right) {
             return right.getSum() - left.getSum();
         }).slice(0, 3);
